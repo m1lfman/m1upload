@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^/?view/(.*?)/?$ /view.php?val=$1 [L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /view\.php\?val=([^\&\ ]+)
+RewriteRule ^/?view\.php$ /view/%1? [L,R=301]
