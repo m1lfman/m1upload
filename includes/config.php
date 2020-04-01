@@ -4,13 +4,12 @@ session_start();
 
 //set timezone
 date_default_timezone_set('Europe/Belgrade');
-setlocale(LC_TIME, 'bs_BA');
 
 //database credentials
-define('DBHOST','localhost');
-define('DBUSER','root');
+define('DBHOST','');
+define('DBUSER','');
 define('DBPASS','');
-define('DBNAME','img');
+define('DBNAME','');
 
 //application address
 define('DIR','http://localhost/');
